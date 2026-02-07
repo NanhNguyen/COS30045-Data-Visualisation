@@ -1,3 +1,7 @@
+# Mercury Link
+
+https://mercury.swin.edu.au/cos30045/s105550018/energy-webpage-v1/index.html
+
 # COS30045-Data-Visualisation
 
 GenAI Declaration – Exercise 0.2

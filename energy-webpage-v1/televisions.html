@@ -1,47 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Televisions | Energy Consumption</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/scripts.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Televisions | Energy Consumption</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/scripts.js"></script>
+  </head>
 
-  <header class="navbar">
-    <div class="logo" onclick="navigateTo('home')">
-      <img src="image/PowerIcon.png" alt="Power Logo" />
-    </div>
+  <body>
+    <header class="navbar">
+      <div class="logo" onclick="navigateTo('home')">
+        <img src="image/PowerIcon.png" alt="Power Logo" />
+      </div>
 
-    <nav>
-      <ul>
-        <li onclick="navigateTo('home')" id="nav-home">Home</li>
-        <li onclick="navigateTo('tv')" id="nav-tv">Televisions</li>
-        <li onclick="navigateTo('about')" id="nav-about">About Us</li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+        <ul>
+          <li onclick="navigateTo('home')" id="nav-home">Home</li>
+          <li onclick="navigateTo('tv')" id="nav-tv">Televisions</li>
+          <li onclick="navigateTo('about')" id="nav-about">About Us</li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <h1>Television Energy Consumption</h1>
+    <main>
+      <h1>Television Energy Consumption in Australia</h1>
 
-    <p>
-      In Australia, modern LED televisions are significantly more energy-efficient
-      compared to older plasma or LCD models.
-    </p>
+      <section>
+        <h2>Why does TV energy consumption matter?</h2>
+        <p>
+          Many Australian households use televisions daily for entertainment,
+          gaming, and streaming. However, televisions can contribute
+          significantly to household electricity bills, especially when the
+          screen size is large or the TV uses older screen technology.
+        </p>
 
-    <p>
-      Energy consumption depends on screen size, brightness settings and usage
-      hours.
-    </p>
-  </main>
+        <p>
+          This page explores energy consumption patterns across different
+          television screen technologies, screen sizes, and power usage to help
+          consumers make more informed purchasing decisions.
+        </p>
+      </section>
 
-  <footer>
-    <p>
-      © <span id="year"></span> Nguyễn Nam Anh |
-      Generated with assistance from GenAI
-    </p>
-  </footer>
+      <section>
+        <h2>Audience</h2>
+        <p>
+          The main audience for this data story is Australian consumers and
+          households who are planning to purchase a new television and want to
+          balance screen quality with energy efficiency.
+        </p>
 
-</body>
+        <p>The audience is likely interested in practical answers such as:</p>
+
+        <ul>
+          <li>Which screen technology is most common?</li>
+          <li>Which technology uses the least power?</li>
+          <li>Does a bigger screen always consume more electricity?</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>
+          Question 1: What screen technologies are most common in Australia?
+        </h2>
+
+        <p>
+          To answer this question, the dataset was grouped by
+          <strong>Screen_Tech</strong> and the number of TV models in each
+          category was counted. A <strong>bar chart</strong> was chosen because
+          it allows easy comparison between categories and makes the most common
+          technologies immediately visible.
+        </p>
+
+        <h3>Chart: Frequency of TV Screen Technologies</h3>
+
+        <figure>
+          <img
+            src="image/screen_tech_frequency.png"
+            alt="Bar chart showing frequency of screen technologies"
+            style="max-width: 100%; border-radius: 8px"
+          />
+          <figcaption>
+            Figure 1: Count of TV models by screen technology.
+          </figcaption>
+        </figure>
+
+        <p>
+          <strong>Insight:</strong> LED-based technologies appear most
+          frequently, suggesting that they are the dominant TV type currently
+          available in Australia. Older technologies such as Plasma appear less
+          often, which may indicate they are being phased out.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Question 2: Which screen technology consumes the least power?</h2>
+
+        <p>
+          This question focuses on energy efficiency. The dataset was grouped by
+          <strong>Screen_Tech</strong> and the average power consumption was
+          calculated using the <strong>Power</strong> column.
+        </p>
+
+        <p>
+          A <strong>bar chart</strong> was chosen because it clearly compares
+          average values across multiple groups.
+        </p>
+
+        <h3>Chart: Average Power Consumption by Screen Technology</h3>
+
+        <figure>
+          <img
+            src="image/avg_power_by_tech.png"
+            alt="Bar chart showing average power consumption by screen technology"
+            style="max-width: 100%; border-radius: 8px"
+          />
+          <figcaption>
+            Figure 2: Average power consumption (W) for each screen technology.
+          </figcaption>
+        </figure>
+
+        <p>
+          <strong>Insight:</strong> Technologies such as LED and OLED tend to
+          have lower average power consumption compared to older technologies.
+          This suggests that consumers who want to reduce electricity costs
+          should prioritise modern display technologies.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>
+          Question 3: What is the relationship between screen size and power
+          use?
+        </h2>
+
+        <p>
+          To explore this relationship, a <strong>scatter plot</strong> was
+          chosen because it is the best chart type for examining correlations
+          between two numerical variables.
+        </p>
+
+        <p>
+          The x-axis represents <strong>Screen Size (inches)</strong>, and the
+          y-axis represents <strong>Power (W)</strong>. Each dot represents one
+          TV model in the dataset.
+        </p>
+
+        <h3>Chart: Screen Size vs Power Consumption</h3>
+
+        <figure>
+          <img
+            src="image/size_vs_power_scatter.png"
+            alt="Scatter plot showing relationship between screen size and power consumption"
+            style="max-width: 100%; border-radius: 8px"
+          />
+          <figcaption>
+            Figure 3: Scatter plot comparing screen size and power consumption.
+          </figcaption>
+        </figure>
+
+        <p>
+          <strong>Insight:</strong> There is a clear positive relationship
+          between screen size and power use. Larger TVs generally consume more
+          electricity, but there are also differences between models, suggesting
+          that energy efficiency depends not only on size but also on technology
+          and model design.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Conclusion and Recommendation</h2>
+
+        <p>
+          This data story shows that modern screen technologies such as LED and
+          OLED are the most common in Australia and are generally more
+          energy-efficient. The analysis also confirms that larger screen sizes
+          tend to consume more power, which may increase household electricity
+          bills.
+        </p>
+
+        <p>
+          <strong>Recommendation:</strong> If a household wants to reduce energy
+          consumption, they should consider choosing a modern LED/OLED
+          television and avoid unnecessarily large screen sizes unless required.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>How were the charts created?</h2>
+
+        <p>
+          The dataset was explored and aggregated using KNIME. GroupBy and
+          aggregation nodes were used to calculate frequencies and average power
+          consumption. Charts were then generated and exported as images for use
+          in this website.
+        </p>
+
+        <p>
+          This approach supports transparency and ensures that the results shown
+          on the website can be reproduced.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Nguyễn Nam Anh | Generated with assistance
+        from GenAI
+      </p>
+    </footer>
+  </body>
 </html>

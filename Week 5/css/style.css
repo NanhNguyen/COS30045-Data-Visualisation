@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+}
+.chart-container {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.responsive-svg {
+  width: 100%;
+  height: auto;
+}
+
+.domain,
+.tick line {
+  stroke: black !important;
+  stroke-width: 1px !important;
+}
+
+.tick text {
+  fill: black !important;
+  font-size: 12px !important;
+}
+
+.chart-container {
+  overflow: visible !important;
+}

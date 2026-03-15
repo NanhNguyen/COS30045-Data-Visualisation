@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 5: Multi-chart Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Energy Consumption Dashboard</h1>
+      <p>Analyzing TV energy efficiency and power price trends.</p>
+    </header>
+
+    <main class="dashboard-grid">
+      <section class="chart-container">
+        <h2>Energy vs. Star Rating (Scatter)</h2>
+        <div id="scatter-plot"></div>
+      </section>
+
+      <section class="chart-container">
+        <h2>Screen Technology Share (Donut)</h2>
+        <div id="donut-chart"></div>
+      </section>
+
+      <section class="chart-container">
+        <h2>Power Consumption - 55 inch TVs</h2>
+        <div id="bar-chart"></div>
+      </section>
+
+      <section class="chart-container">
+        <h2>Spot Power Prices (1998-2024)</h2>
+        <div id="line-chart"></div>
+      </section>
+    </main>
+
+    <script src="js/scatter.js"></script>
+    <script src="js/donut.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/line.js"></script>
+  </body>
+</html>

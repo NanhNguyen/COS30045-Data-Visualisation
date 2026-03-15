@@ -1,0 +1,20 @@
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1400px;
+  background-color: #f9f9f9;
+}
+
+/* Style cho các cột để dễ nhìn */
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: orange;
+}
+/* Thêm vào file style.css */
+text {
+  fill: #333; /* Màu xám đậm cho dễ đọc */
+  font-size: 14px;
+}

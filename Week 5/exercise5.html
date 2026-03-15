@@ -8,28 +8,48 @@
   </head>
   <body>
     <header>
-      <h1>Energy Consumption Dashboard</h1>
-      <p>Analyzing TV energy efficiency and power price trends.</p>
+      <h1>TV Energy Consumption Dashboard</h1>
+      <p>
+        A comprehensive analysis of energy efficiency across various TV brands
+        and screen technologies.
+      </p>
     </header>
 
     <main class="dashboard-grid">
       <section class="chart-container">
         <h2>Energy vs. Star Rating (Scatter)</h2>
+        <p>
+          This scatter plot explores the relationship between star ratings and
+          energy consumption. Ideally, higher star ratings should correlate with
+          lower energy usage.
+        </p>
         <div id="scatter-plot"></div>
       </section>
 
       <section class="chart-container">
         <h2>Screen Technology Share (Donut)</h2>
+        <p>
+          This donut chart illustrates the market share of different screen
+          technologies (LED, LCD, OLED, Plasma) in our current dataset.
+        </p>
         <div id="donut-chart"></div>
       </section>
 
       <section class="chart-container">
-        <h2>Power Consumption - 55 inch TVs</h2>
+        <h2>Efficiency of 55-inch TVs (Bar)</h2>
+        <p>
+          Comparing the average power consumption of the top 5 brands for
+          55-inch models to find the most efficient manufacturer.
+        </p>
         <div id="bar-chart"></div>
       </section>
 
       <section class="chart-container">
         <h2>Spot Power Prices (1998-2024)</h2>
+        <p>
+          This line chart tracks the historical trend of power prices over the
+          last 25 years, providing context for TV energy costs.
+        </p>
         <div id="line-chart"></div>
       </section>
     </main>

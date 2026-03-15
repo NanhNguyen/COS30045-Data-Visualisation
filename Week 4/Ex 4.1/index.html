@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 4.1 - SVG House</title>
+  </head>
+  <body>
+    <h1>My SVG House and Garden</h1>
+
+    <svg width="500" height="400" style="border: 1px solid #ccc">
+      <rect x="0" y="0" width="500" height="300" fill="skyblue" />
+
+      <rect x="0" y="300" width="500" height="100" fill="forestgreen" />
+
+      <rect
+        x="150"
+        y="200"
+        width="200"
+        height="150"
+        fill="wheat"
+        stroke="black"
+        stroke-width="2"
+      />
+
+      <polygon
+        points="250,100 140,200 360,200"
+        fill="firebrick"
+        stroke="black"
+      />
+
+      <rect x="225" y="280" width="50" height="70" fill="saddlebrown" />
+
+      <circle cx="265" cy="315" r="3" fill="yellow" />
+
+      <g
+        id="windows"
+        fill="white"
+        stroke="blue"
+        stroke-width="2"
+        transform="translate(0,0)"
+      >
+        <rect x="170" y="220" width="40" height="40" />
+        <rect x="290" y="220" width="40" height="40" />
+      </g>
+
+      <circle cx="430" cy="70" r="40" fill="orange" />
+
+      <text x="20" y="40" font-family="Arial" font-size="20" fill="darkblue">
+        My Sweet Home
+      </text>
+    </svg>
+
+    <p>Check the console and DOM to see the elements!</p>
+  </body>
+</html>

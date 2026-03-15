@@ -100,3 +100,32 @@ Generative AI (ChatGPT) was used in this project to assist with:
 
 All suggestions were reviewed, modified, and implemented by the student.
 The final submission reflects the student’s own understanding and work.
+
+## 🤖 GenAI Declaration
+
+In accordance with the requirements for Exercise 5 & 6, I have utilized Generative AI (Google Gemini) to assist in the development of this dashboard. Below is the documentation of its usage and my subsequent validation process.
+
+### 🛠️ Tools Used
+
+- **Model:** Google Gemini 3 Flash
+- **Purpose:** Code generation, debugging, and layout structuring.
+
+### 📝 Extent of Usage
+
+1.  **Boilerplate Logic:** Generated the initial D3.js structure for the Histogram, Scatterplot, and Line charts.
+2.  **CSS Layout:** Assisted in creating a responsive CSS Grid for the Exercise 5 Dashboard.
+3.  **Complex Interactivity:** Provided the foundational logic for D3 transitions in the Histogram filters and SVG/HTML tooltips for the Scatterplot.
+4.  **Debugging:** Helped identify and resolve coordinate system issues (viewBox vs. Margin) and data mapping errors (NaN values in tooltips).
+
+### 🧠 Human Validation & Modifications
+
+While GenAI provided the foundation, significant human intervention was required to meet the academic standards:
+
+- **Methodology Alignment:** I manually refactored the generated code to follow the **Dufour & Meeks (2024)** strategy, specifically using `innerChart` groups and `shared-constants.js` to manage global variables.
+- **Data Accuracy:** I corrected the data mapping logic to match the specific columns in `Ex6_TVdata.csv` (e.g., mapping `screenSize` and `star` instead of AI-suggested generic names).
+- **Coordinate Fixes:** I manually calculated the `viewBox` and `margin` values to ensure that axes and labels were not clipped, a task that required multiple iterations and browser-based debugging.
+- **Customization:** I redesigned the tooltips and color scales to improve accessibility and visual storytelling, ensuring the legend clearly explains the screen technology categories.
+
+### 📜 Conclusion
+
+The use of GenAI allowed me to focus on the high-level design and data storytelling aspects of the project while ensuring the technical implementation followed best practices for D3.js development.

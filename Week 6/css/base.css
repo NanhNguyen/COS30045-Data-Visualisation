@@ -1,0 +1,16 @@
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button.active {
+  background: steelblue;
+  color: white;
+  border-color: steelblue;
+}
+.chart-container {
+  margin-bottom: 50px;
+}
